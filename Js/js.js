@@ -178,9 +178,8 @@ function countDown(){
 function clockTick(){
 timer--;
 timerDiv.textContent= timer;
-// if (timer <=0 ){
-//     //call quiz end function
-// }
+if (timer ===0 ){
+endGame()};
 }
 
 function endGame(){
