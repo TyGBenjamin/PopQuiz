@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Pop Quiz</title>
+    <!-- <link rel="stylesheet" type="text/css" href="./assets/css/jass.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" /> -->
+    <link rel="stylesheet" type="text/css" href="./Css/style.css">
+
+  </head>
+  
+  <body>
+
+    <main>
+      <!-- <h1>Timed Quiz </h1>
+      <h2>Click on the button to get started!</h2> -->
+      <div class="start-quiz"> <button id="clickStart"> Start Quiz</button></div>
+
+      <!-- Quiz Info-->
+      <div class="info_box">
+        <div class="info_title">
+            <span> Some Key Points </span>
+        </div class="info_list">
+          <div class="quizInfo">1. You will have a total of <Span> 60 seconds</Span> to complete quiz</div>
+          <div class="quizInfo">2. Once an answer is selected you cannot reselect.</div>
+          <div class="quizInfo">3. Each wrong answer will deduct  <span> 5 seconds </span>from time left</div>
+          <div class="quizInfo">4. You cannot exit the quiz until all answers have been selected.</div>
+          <div class="quizInfo">5. You will be able to log your name and score after completion of quiz</div>
+
+          <div class="buttons">
+            <button class="quit">Exit Quiz</button>
+            <button class="continue">Continue</button>
+        </div>
+        </div>
+
+
+      </div>
+  
+
+  <!-- <div class="container"> -->
+      <div class="quiz_form">
+        <header>
+          <div class="title">Pop Quiz </div>
+          <div class="timer">
+            <div class="time_text">Time Remaining</div>
+            <div id="timer_seconds">60 </div>
+          </div>
+        </header>
+
+
+      <section>
+        <div class="start_text">
+          <span> Code for styling HTML is typical stored in what type of file?</span>
+        </div>
+          <div class="selection_list">
+              <button class="selection" id="buttonOne" onclick="checkAnswer(event)"> 
+              .html
+              </button>
+
+              <button class="selection" id="buttonTwo" onclick="checkAnswer(event)">
+                .css
+              </button>
+
+              <button class="selection" id="buttonThree" onclick="checkAnswer(event)">
+              .js
+              </button>
+
+              <button class="selection" id="buttonFour" onclick="checkAnswer(event)">
+                .txt
+              </button>
+          </div>
+      </section>
+      
+      
+      <footer>
+        <div class="total_questions_left">
+          <!-- <span> 2</span> Of 5 Questions</span> -->
+        </div>
+        <!-- <button class="next_question"> Next Question</button> -->
+      </footer>
+    </div>
+
+    <div class="result_box">
+      <div class="complete_text"> You've completed the Quiz! </div>
+      <div class="score_text">
+          <p> You got <text id="score_grade">1 </text> out of 100<p>
+      </div>
+      <div class="button_result">
+        <button id="restart_new">Replay Quiz</button>
+        <button id ="quit_new">Quit Quiz</button>
+        <button id="store_info">Log Score</button>
+      </div>
+
+      <div class="log_score">
+        <form>
+        <input class="personName" label="Enter Name" type="text" placeholder="Type Name Here"> </input>
+        <input class="personScore" label="Enter Score" type="text" placeholder="Place Score Here"> </input>
+        <button id=saveInfo> Submit </button>
+        <p> Thank You For Your Time </p>
+      </form>
+        </div>
+
+
+    </main>
+
+    <section>
+      <div class="lastForm">
+        <p> <text id="displayInfo">Scores can Be Logged and shown here after quiz</text></p>
+        <p> <text id="displayName"> Name Can be Logged and Shown after Completion of quiz</text></p>
+        <button id="show">Show Registry</button>
+        <button id="clear"> Clear Registry</button>
+      </div>
+      </section>
+
+    <!-- Added link to the jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <script type="text/javascript" src="./Js/js.js" ></script>
+  </body>
+</html>
