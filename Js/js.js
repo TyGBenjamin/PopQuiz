@@ -103,6 +103,7 @@ startButton.addEventListener('click',function (e){
 // If Exit Button is clicked
 quitButton.addEventListener('click', function(){
     infoBox.classList.remove("activeInfo");
+    quizForm.classList.remove("activeQuizForm")
 
 })
 
@@ -256,14 +257,14 @@ restartButton.addEventListener('click', function(){
 })
 
 
-storeScore.addEventListener('click', function(){
-    // var newElement = document.createElement('form');
-    infoBox.classList.remove("activeInfo");
-    saveScore.classList.add("activeLog");
-     quizForm.classList.remove("activeQuizForm");
-    resultForm.classList.remove("activeResults");
-    document.body.appendChild(newElement);
-})
+// storeScore.addEventListener('click', function(){
+//     // var newElement = document.createElement('form');
+//     infoBox.classList.remove("activeInfo");
+//     saveScore.classList.add("activeLog");
+//      quizForm.classList.remove("activeQuizForm");
+//     resultForm.classList.remove("activeResults");
+//     document.body.appendChild(newElement);
+// })
 
 // Pulls stored info from Local Storage
 showRegistry.addEventListener('click', function(e){
